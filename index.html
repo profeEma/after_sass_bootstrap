@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- LINK DE CSS -->
     <link rel="stylesheet" href="css/estilo.css">
     <title>SASS + BOOTSTRAP</title>
@@ -11,47 +13,97 @@
   <body>
     <div class="container-fluid">
         <!-- NAV + LOGO -->
-        <div class="row">
+        <header class="row mb-1">
             <div class="col-12 col-lg-12">
-
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="img/logoLakers.png" alt="logo lakers" class="img-fluid"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
             </div>
-        </div>
+        </header>
         <!-- CARRUSEL -->
-        <div class="row">
+        <div class="row mb-2">
             <div class="col-12 col-lg-12">
-
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/slider1_mjkb.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slider2_luk.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slider1_mjkb.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </div>
     </div>
     <!-- CONTENIDO: ENCABEZADO + IMG + TXT -->
     <main class="container">
         <div class="row">
-            <div class="col-12 col-lg-12">
-                <h1>BIENVENIDOS SASS + BOOTSTRAP</h1>
+            <div class="col-12 col-lg-12" data-aos="fade-up">
+                <h1 class="fs-1 text-center">BIENVENIDOS SASS + BOOTSTRAP</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" data-aos="fade-up">
                 <img src="img/img_kyrie.jpg" alt="irving" class="img-fluid">
             </div>
-            <div class="col-12 col-lg-6">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita saepe aspernatur officiis optio, voluptatibus deserunt harum commodi excepturi quaerat ex, quasi, ratione dolor. Facilis illum adipisci veniam quo hic deserunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam omnis tempora eos. Dolor placeat quasi quia unde eveniet laborum itaque soluta quis cumque, quisquam numquam, quo, amet molestiae adipisci officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium provident sapiente odit nihil et ipsum vitae perferendis temporibus debitis nostrum hic harum, excepturi itaque eaque officia blanditiis tempora laudantium eligendi.</p>
+            <div class="col-12 col-lg-6" data-aos="fade-up">
+                <p class="fs-4 m-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita saepe aspernatur officiis optio, voluptatibus deserunt harum commodi excepturi quaerat ex, quasi, ratione dolor. Facilis illum adipisci veniam quo hic deserunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam omnis tempora eos. Dolor placeat quasi quia unde eveniet laborum itaque soluta quis cumque, quisquam numquam, quo, amet molestiae adipisci officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium provident sapiente odit nihil et ipsum vitae perferendis temporibus debitis nostrum hic harum, excepturi itaque eaque officia blanditiis tempora laudantium eligendi.</p>
             </div>
         </div>
     </main>
     <footer class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-4">
+        <div class="row text-center">
+            <div class="col-12 col-lg-4 p-5">
                 <img src="img/logoLakers.png" alt="logo lakers" class="img-fluid">
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 p-5">
                 <h3>REDES SOCIALES</h3>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 p-5">
                 <h3>CONTACTO</h3>
             </div>
         </div>
     </footer>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>

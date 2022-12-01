@@ -1,0 +1,21 @@
+// mixin
+@mixin bgColor($color){
+    background-color: $color;
+}
+header,footer{
+    @include bgColor(lightblue);
+}
+// MAPA
+$estilosLinks:(
+    tF-links:1.5rem,
+    c-links:blue,
+    cH-links:rgb(112, 0, 112)
+);
+a{
+    font-size:map-get($estilosLinks,tF-links)!important;
+    color:map-get($estilosLinks,c-links)!important;
+    transition: all 1s;
+    &:hover{
+        color:map-get($estilosLinks,cH-links)!important;
+    }
+}

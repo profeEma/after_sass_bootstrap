@@ -543,8 +543,8 @@ progress {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * 0);
+    padding-left: calc(var(--bs-gutter-x) * 0);
     margin-top: var(--bs-gutter-y); }
 
 .col {
@@ -7808,3 +7808,13 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+header, footer {
+  background-color: lightblue; }
+
+a {
+  font-size: 1.5rem !important;
+  color: blue !important;
+  transition: all 1s; }
+  a:hover {
+    color: #700070 !important; }
